@@ -1,7 +1,6 @@
 #Clock Web App
 
- 
-#### --- EN ---
+
 This clock web app contains all the features you need in an attractive and simple app.
 
 **Main features:**

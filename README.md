@@ -14,4 +14,11 @@ This clock web app contains all the features you need in an attractive and simpl
    
   ![Screenshot of the Clock App](https://joancipria.files.wordpress.com/2016/05/clock.png)
 
-Licensed under GPL - A project for B2G
+
+**TO - DO LIST**  02/05/2016
+* Create the Alarms System (IndexDB?)
+* Timer: Reset button not working (build a reset function)
+* Timer: Alarm sound should sound until an user action
+* Timer: Improve robustness
+
+Licensed under GPL - A project for B2G/B2g Community

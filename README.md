@@ -8,7 +8,7 @@ This clock web app contains all the features you need in an attractive and simpl
 
    * WebApp built in Html, Javascript and CSS using web standards.
    * Very fast and light.
-   * Comfortable and intuitive interface.
+   * Simple, comfortable and intuitive interface.
    * 3 utilities: powerful timer, stop-watch and alarms*.
  
    

@@ -1,0 +1,99 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<script src="js/clock.js" type="text/javascript" async=""></script>
+		<script src="js/layers.js" type="text/javascript" async=""></script>
+		<script src="js/stop-watch.js" type="text/javascript" async=""></script>
+		<script src="js/keyboard.js" type="text/javascript" async=""></script>
+		<script src="js/jquery-1.12.3.min.js" type="text/javascript"></script>
+		<title>Clock</title>
+		<link href="style/main.css" rel="stylesheet">
+		<link href="style/clock.css" rel="stylesheet">
+		<link href="style/timer.css" rel="stylesheet">
+		<link href="style/stop_watch.css" rel="stylesheet">
+		<link href="style/buttons.css" rel="stylesheet">
+	</head>
+	
+	
+	<body onload="startTime();startDate ();">
+		
+		<!-- MAIN MENU BAR -->
+		<div class="bar">
+			<div class="menu-button">
+				<a href="#" onclick="viewAlarms();" ><img id="b1" width="7%" src="img/alarm.png" alt=""></a>
+			</div>
+
+			<div class="menu-button">
+				<a href="#" onclick="viewWatch();" ><img id="b2" class="selected-button" width="7%" src="img/clock.png" alt=""></a>
+			</div>
+	
+			<div class="menu-button">
+				<a href="#" onclick="viewTimer();" ><img id="b3" width="7%" src="img/timer.png" alt=""></a>
+			</div>
+
+			<div class="menu-button">
+				<a  href="#" onclick="viewStopWatch();"><img id="b4" width="7%" src="img/stop-watch.png" alt=""></a>
+			</div><hr>
+		
+		</div>
+
+
+		<!-- CLOCK LAYER -->
+		<div id="clock">
+			<p id="clock-text"></p><p id="clock-text-seconds"></p>
+			<p id="date-text"></p>
+		</div>
+
+
+		<!-- STOP-WATCH LAYER -->
+		<div id="all-stop-watch">
+			
+			<div id="stop-watch">
+				<div class="crono_wrapper">
+					<div id="crono"><span id="time"></span></div>
+						<input id="start-button" class="greenButton" type="button" value="Start" onclick="start();">
+						<input id="pause-button" class="blueButton" type="button" value="Lap" onclick="lap();">
+						<a href="#" onclick="reset();"><p class="reset-button">&#8635;</p></a>
+				</div>
+			</div>
+
+			<div id="laps">
+			<!-- Laps will be generated here-->	
+			</div>
+		</div>
+
+		<!-- TIMER/COUNT DOWN LAYER -->
+		<div id="all-timer">
+			
+			<div id="input-layer"> <!-- Input sub-layer -->
+				
+					<div class="input-form"><table><tr><td>
+					<input placeholder="00" class="input-time" id="input-time-3" style="width 5%;display: inline;" /><p class="minutes-text">H</p></td><td>
+					<input placeholder="00" class="input-time" id="input-time-2" style="width 5%;display: inline;" /><p class="minutes-text">M</p></td><td>
+					<input placeholder="00" class="input-time" id="input-time" style="width 5%;display: inline;" /><p class="minutes-text">S</p></td></tr></table> <!-- Time input-->
+					</div>	
+
+			<!-- Virtual Numeric Keyboard -->
+				<table id="keyboard">
+					<tr><td onclick="get1();" class="keyboard-button">1</td><td onclick="get2();" class="keyboard-button">2</td><td onclick="get3();" class="keyboard-button">3</td></tr>
+					<tr><td onclick="get4();" class="keyboard-button">4</td><td onclick="get5();" class="keyboard-button">5</td><td onclick="get6();" class="keyboard-button">6</td></tr>
+					<tr><td onclick="get7();" class="keyboard-button">7</td><td onclick="get8();" class="keyboard-button">8</td><td onclick="get9();" class="keyboard-button">9</td></tr>
+					<tr><td></td><td onclick="get0();" class="keyboard-button">0</td><td onclick="clearX();" class="keyboard-button"><p class="reset-button2">&#10005;</p></td></tr>
+				</table><br>
+			
+					<input onclick="StartCountDown();" type="button" value="Start" class="greenButton"/>
+			</div>
+			
+			<div id="count-down"> <!-- Count down sub-layer -->
+				<div class="timer-text-numbers" id="countdown">00:00</div><br>
+				<div class="redButton" id="pause">Pause</div>
+				<div class="greenButton"id="resume">Resume</div>
+				<div class="blueButton"id="reset">Reset</div>
+			</div>
+				<script src="js/timer.js" type="text/javascript" async=""></script>
+		</div>
+		
+		<!-- ALARMS LAYER -->
+		<div id="all-alarms"><h2 style="color: white;">NOT IMPLEMENTED YET</h2></div>
+	</body>
+</html>

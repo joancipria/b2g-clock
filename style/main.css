@@ -1,0 +1,66 @@
+/* --- GENERAL --- */
+a{
+   outline: 0;
+   	text-decoration: none;
+}
+input{
+   outline: 0;
+}
+body{
+	background-color: #101111;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */ 
+}
+.small-hr{
+	width: 15%;
+	height: 0.1%;
+	margin-top: 5%;
+	margin-bottom: 2%;
+}
+
+/* --- LAYERS --- */
+#clock{
+	text-align: center;
+	display: block;
+}
+
+#all-stop-watch{
+	text-align: center;
+	display: none;
+}
+
+#all-timer{
+	display: none;
+}
+
+#all-alarms{
+	text-align: center;
+	display: none;
+}
+
+/* --- BAR --- */
+.bar{
+	width: 100%;
+	text-align: center;
+}	
+.menu-button{
+	width: 25%;
+	display: inline;
+	margin-left: 9%;
+	margin-right: 9%;
+}
+.selected-button{
+	border-bottom: 3px solid blue;
+}
+.reset-button{
+	display: inline;
+	font-size: 300%;
+	color: #cfe2e6;
+	text-decoration: none;
+}
+
+
+
+

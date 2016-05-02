@@ -1,0 +1,72 @@
+/* --- DIFFERENT COLORED BUTTONS --- */
+.redButton {
+	-moz-box-shadow:inset 0px 34px 0px -15px #db2215;
+	-webkit-box-shadow:inset 0px 34px 0px -15px #db2215;
+	box-shadow:inset 0px 34px 0px -15px #db2215;
+	background-color:#db2215;
+	border:1px solid #db2215;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:150%;
+	font-weight:bold;
+	padding:9px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #db2215;
+}
+.redButton:hover {
+	background-color:#db2215;
+}
+.redButton:active {
+	position:relative;
+	top:1px;
+}
+
+.greenButton {
+	-moz-box-shadow:inset 0px 34px 0px -15px #5cbf2a;
+	-webkit-box-shadow:inset 0px 34px 0px -15px #5cbf2a;
+	box-shadow:inset 0px 34px 0px -15px #5cbf2a;
+	background-color:#5cbf2a;
+	border:1px solid #5cbf2a;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:150%;
+	font-weight:bold;
+	padding:9px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #5cbf2a;
+}
+.greenButton:hover {
+	background-color:#5cbf2a;
+}
+.greenButton:active {
+	position:relative;
+	top:1px;
+}
+
+.blueButton {
+	-moz-box-shadow:inset 0px 34px 0px -15px #15afd6;
+	-webkit-box-shadow:inset 0px 34px 0px -15px #15afd6;
+	box-shadow:inset 0px 34px 0px -15px #15afd6;
+	background-color:#15afd6;
+	border:1px solid #15afd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:150%;
+	font-weight:bold;
+	padding:9px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #15afd6;
+}
+.blueButton:hover {
+	background-color:#15afd6;
+}
+.blueButton:active {
+	position:relative;
+	top:1px;
+}

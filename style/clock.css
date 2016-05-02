@@ -1,0 +1,16 @@
+/* --- WATCH/CLOCK LAYER --- */
+#clock-text{
+font-size: 400%;
+color: #cfe2e6;
+display: inline;
+}
+#clock-text-seconds{
+font-size: 150%;
+color: #cfe2e6;
+margin-top: -20%;
+display: inline;
+}
+#date-text{
+font-size: 120%;
+color: #cfe2e6;
+}

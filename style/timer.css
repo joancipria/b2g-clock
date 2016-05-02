@@ -1,0 +1,43 @@
+/* --- TIMER --- */
+#input-layer{
+text-align: center;
+display: block;
+}
+#count-down{
+text-align: center;
+display: none;
+}
+#keyboard{
+font-size: 150%;
+width: 80%;
+height: 50%;
+text-align: center;
+color: #cfe2e6;
+margin-top: 5%;
+margin-left:9%;
+margin-right: 9%;
+}
+.keyboard-button:active{
+background-color: #777879;
+}
+.crono_wrapper {
+text-align:center;
+}
+.input-time{
+text-align: right;
+width: 65%;
+background-color:#101111;
+border: 0px solid #101111;
+color: white;
+font-size: 300%; 
+}
+.timer-text-numbers{
+font-size: 400%;
+color: #cfe2e6;
+}
+.number-inputs{
+display: inline;
+width: 50%;
+font-size: 200%;
+
+}

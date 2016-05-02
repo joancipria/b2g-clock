@@ -1,0 +1,28 @@
+/* --- STOP WATCH --- */
+#stop-watch{
+text-align: center;
+height: 50%;
+}
+#laps{
+text-align: left;
+height: 25%;
+overflow: auto;
+color: white;
+font-size: 150%;
+}
+
+#crono{
+font-size: 350%;
+color: #cfe2e6;
+margin-bottom: 4%;
+}
+#timer{
+font-size: 400%;
+text-align: center;
+}
+.minutes-text{
+font-size: 100%;
+color: #cfe2e6;
+display: inline;
+margin-left: 1%;
+}

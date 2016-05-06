@@ -9,7 +9,7 @@ function startTime() {
     document.getElementById('clock-text').innerHTML =
     h + ":" + m;
 document.getElementById('clock-text-seconds').innerHTML =
-    " "+s;
+    ""+s;
     var t = setTimeout(startTime, 500);
 }
 function checkTime(i) {

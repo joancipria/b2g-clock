@@ -1,9 +1,3 @@
-function resetTimer() {
-document.getElementById('count-down').style.display="none";
-document.getElementById('input-layer').style.display="block";
-document.getElementById('countdown').style.color="#cfe2e6";
-};
-
 function StartCountDown() {
 document.getElementById('count-down').style.display="block";
 document.getElementById('input-layer').style.display="none";
@@ -12,7 +6,7 @@ document.getElementById('input-layer').style.display="none";
 var CountDown = (function ($) {
 	
 
-    // Length ms 
+    // Length ms
     var TimeOut = 100000;
     // Interval ms
     var TimeGap = 1000;
@@ -25,6 +19,7 @@ var CountDown = (function ($) {
     var GuiPause = $('#pause');
     var GuiResume = $('#resume').hide();
     
+    var wantReset = false;
     var Running = true;
     
     var UpdateTimer = function() {
@@ -35,12 +30,17 @@ var CountDown = (function ($) {
         // Countdown if running
         if( Running ) {
             CurrentTime += TimeGap;
-            if( CurrentTime >= EndTime ) {
+            if( CurrentTime >= EndTime && wantReset==true) {
+    					 GuiPause.hide();
+            }
+            
+			if( CurrentTime >= EndTime && wantReset==false) {
                 GuiTimer.css('color','red');
                 var audio = new Audio('sounds/ac_awake.opus.ogx');
 					 audio.play();
 					 GuiPause.hide();
-            }
+            }            
+            
         }
         // Update Gui
         var Time = new Date();
@@ -75,11 +75,19 @@ if (document.getElementById('input-time-3').value=="" || document.getElementById
         GuiPause.hide();
         GuiResume.show();
     };
-    
+      
+   
     var Resume = function() {
         Running = true;
         GuiPause.show();
         GuiResume.hide();
+    };
+    
+        var Reset = function() {
+EndTime=0;
+document.getElementById('count-down').style.display="none";
+document.getElementById('input-layer').style.display="block";
+wantReset=true;
     };
     
     var Start = function( Timeout ) {
@@ -87,17 +95,24 @@ if (document.getElementById('input-time-3').value=="" || document.getElementById
         CurrentTime = ( new Date() ).getTime();
         EndTime = ( new Date() ).getTime() + TimeOut;
         UpdateTimer();
+        wantReset=false;
+
+        
     };
 
     return {
         Pause: Pause,
         Resume: Resume,
-        Start: Start
+        Start: Start,
+        Reset: Reset
     };
+
+
 })(jQuery);
 
 jQuery('#pause').on('click',CountDown.Pause);
 jQuery('#resume').on('click',CountDown.Resume);
+jQuery('#reset').on('click',CountDown.Reset);
 
 var Input3 = (((document.getElementById('input-time-3').value)*60)*60)*1000;
 var Input2 = ((document.getElementById('input-time-2').value)*60)*1000;

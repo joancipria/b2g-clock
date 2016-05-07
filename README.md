@@ -15,9 +15,8 @@ Try it online here: http://s610249639.mialojamiento.es/clock/
   ![Screenshot of the Clock App](https://joancipria.files.wordpress.com/2016/05/clock.png)
 
 
-**TO - DO LIST**  02/05/2016
+**TO - DO LIST**  08/05/2016
 * Create the Alarms System (IndexDB?)
-* Timer: Reset button not working (build a reset function)
 * Timer: Alarm sound should sound until an user action
 * Timer: Improve robustness
 

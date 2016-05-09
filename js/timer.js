@@ -1,7 +1,7 @@
 function StartCountDown() {
 document.getElementById('count-down').style.display="block";
 document.getElementById('input-layer').style.display="none";
-
+document.getElementById('countdown').style.color="#cfe2e6";
 
 var CountDown = (function ($) {
 	

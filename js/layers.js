@@ -29,7 +29,6 @@ function viewTimer() {
 	document.getElementById('b1').className="";
 	document.getElementById('b2').className="";
 	document.getElementById('b4').className="";
-	startTime();
 }
 function viewAlarms() {
 	document.getElementById('all-alarms').style.display="block";
@@ -40,5 +39,4 @@ function viewAlarms() {
 	document.getElementById('b3').className="";
 	document.getElementById('b2').className="";
 	document.getElementById('b4').className="";
-	startTime();
 }

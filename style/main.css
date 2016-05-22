@@ -52,7 +52,7 @@ body{
 	margin-right: 9%;
 }
 .selected-button{
-	border-bottom: 3px solid blue;
+	border-bottom: 3px solid #00aacd;
 }
 .reset-button{
 	display: inline;

@@ -83,11 +83,12 @@ if (document.getElementById('input-time-3').value=="" || document.getElementById
         GuiResume.hide();
     };
     
-        var Reset = function() {
+var Reset = function() {
 EndTime=0;
 document.getElementById('count-down').style.display="none";
 document.getElementById('input-layer').style.display="block";
 wantReset=true;
+clearX();
     };
     
     var Start = function( Timeout ) {
@@ -96,6 +97,8 @@ wantReset=true;
         EndTime = ( new Date() ).getTime() + TimeOut;
         UpdateTimer();
         wantReset=false;
+        Running = true;
+        GuiPause.show();
 
         
     };

@@ -48,11 +48,11 @@
 }
 
 .blueButton {
-	-moz-box-shadow:inset 0px 34px 0px -15px #15afd6;
-	-webkit-box-shadow:inset 0px 34px 0px -15px #15afd6;
-	box-shadow:inset 0px 34px 0px -15px #15afd6;
-	background-color:#15afd6;
-	border:1px solid #15afd6;
+	-moz-box-shadow:inset 0px 34px 0px -15px #00aacd;
+	-webkit-box-shadow:inset 0px 34px 0px -15px #00aacd;
+	box-shadow:inset 0px 34px 0px -15px #00aacd;
+	background-color:#00aacd;
+	border:1px solid #00aacd;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
@@ -61,10 +61,10 @@
 	font-weight:bold;
 	padding:9px 23px;
 	text-decoration:none;
-	text-shadow:0px -1px 0px #15afd6;
+	text-shadow:0px -1px 0px #00aacd;
 }
 .blueButton:hover {
-	background-color:#15afd6;
+	background-color:#00aacd;
 }
 .blueButton:active {
 	position:relative;

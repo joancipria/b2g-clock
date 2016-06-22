@@ -17,7 +17,7 @@ Try it online here: http://s610249639.mialojamiento.es/clock/
   ![Screenshot of the Clock App](https://joancipria.files.wordpress.com/2016/06/clock2.png)
 
 
-**TO - DO LIST**  08/05/2016
+**TO - DO LIST**  22/06/2016
 * Create the Alarms System (IndexDB?)
 * Timer: Alarm sound should sound until an user action
 * Timer: Improve robustness

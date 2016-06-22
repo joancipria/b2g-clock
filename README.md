@@ -20,7 +20,7 @@ Try it online here: http://s610249639.mialojamiento.es/clock/
 **TO - DO LIST**  22/06/2016
 * Create the Alarms System (IndexDB?)
 * Timer: Alarm sound should sound until an user action
-* Timer: Improve robustness
+* Timer: Improve robustness (declare max input, input 0 ...)
 * General: Fix annoying numbers movement
 
 Licensed under GPL - A project for B2G/B2g Community

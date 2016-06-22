@@ -14,10 +14,13 @@ Try it online here: http://s610249639.mialojamiento.es/clock/
    
   ![Screenshot of the Clock App](https://joancipria.files.wordpress.com/2016/05/clock.png)
 
+  ![Screenshot of the Clock App](https://joancipria.files.wordpress.com/2016/06/clock2.png)
+
 
 **TO - DO LIST**  08/05/2016
 * Create the Alarms System (IndexDB?)
 * Timer: Alarm sound should sound until an user action
 * Timer: Improve robustness
+* General: Fix annoying numbers movement
 
 Licensed under GPL - A project for B2G/B2g Community

@@ -6,7 +6,7 @@ Try it online here: http://s610249639.mialojamiento.es/clock/
 
 **Main features:**
 
-   * WebApp built in Html, Javascript and CSS using web standards.
+   * WebApp built in HTML5, Javascript and CSS using web standards.
    * Very fast and light.
    * Simple, comfortable and intuitive interface.
    * 3 utilities: powerful timer, stop-watch and alarms*.

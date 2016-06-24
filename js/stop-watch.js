@@ -98,6 +98,6 @@ contador++;
 var now = document.getElementById('crono').innerHTML;
 var element = document.getElementById('laps');
 var campo = document.getElementById('laps').innerHTML;
-var campo2 = element.innerHTML = "<div id='lap"+contador+"'>"+"Lap "+contador+"    "+now+"</div><hr class='small-h'>";
+var campo2 = element.innerHTML = "<div id='lap"+contador+"'>"+"Lap "+contador+"    "+now+"</div><hr class='small-hr'>";
 document.getElementById('laps').innerHTML = campo.concat(campo2);
 }

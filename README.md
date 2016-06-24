@@ -12,7 +12,7 @@ Try it online here: http://s610249639.mialojamiento.es/clock/
    * 3 utilities: powerful timer, stop-watch and alarms*.
  
    
-  ![Screenshot of the Clock App](https://joancipria.files.wordpress.com/2016/05/clock.png)
+  ![Screenshot of the Clock App](https://joancipria.files.wordpress.com/2016/06/capturas.png)
 
   ![Screenshot of the Clock App](https://joancipria.files.wordpress.com/2016/06/clock2.png)
 

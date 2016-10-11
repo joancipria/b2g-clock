@@ -1,45 +1,14 @@
 // VIRTUAL KEYBOARD FUNCTIONS FOR THE TIMER/COUNT DOWN
 
-function get1() {
-var campo = document.getElementById('input-time').value;var campo2 = 1;var resultado = campo.concat(campo2);document.getElementById('input-time').value=resultado;
-check();check2();
+function getNum(element) {
+num = element.value;
+var campo = document.getElementById('input-time').value;
+var resultado = campo.concat(num);
+document.getElementById('input-time').value=resultado;
+check();
+check2();
 }
-function get2() {
-var campo = document.getElementById('input-time').value;var campo2 = 2;var resultado = campo.concat(campo2);document.getElementById('input-time').value=resultado;
-check();check2();
-}
-function get3() {
-var campo = document.getElementById('input-time').value;var campo2 = 3;var resultado = campo.concat(campo2);document.getElementById('input-time').value=resultado;
-check();check2();
-}
-function get4() {
-var campo = document.getElementById('input-time').value;var campo2 = 4;var resultado = campo.concat(campo2);document.getElementById('input-time').value=resultado;
-check();check2();
-}
-function get5() {
-var campo = document.getElementById('input-time').value;var campo2 = 5;var resultado = campo.concat(campo2);document.getElementById('input-time').value=resultado;
-check();check2();
-}
-function get6() {
-var campo = document.getElementById('input-time').value;var campo2 = 6;var resultado = campo.concat(campo2);document.getElementById('input-time').value=resultado;
-check();check2();
-}
-function get7() {
-var campo = document.getElementById('input-time').value;var campo2 = 7;var resultado = campo.concat(campo2);document.getElementById('input-time').value=resultado;
-check();check2();
-}
-function get8() {
-var campo = document.getElementById('input-time').value;var campo2 = 8;var resultado = campo.concat(campo2);document.getElementById('input-time').value=resultado;
-check();check2();
-}
-function get9() {
-var campo = document.getElementById('input-time').value;var campo2 = 9;var resultado = campo.concat(campo2);document.getElementById('input-time').value=resultado;
-check();check2();
-}
-function get0() {
-var campo = document.getElementById('input-time').value;var campo2 = 0;var resultado = campo.concat(campo2);document.getElementById('input-time').value=resultado;
-check();check2();
-}
+
 function clearX() {
      $('.input-form input').each(function () {
    $(this).val("");

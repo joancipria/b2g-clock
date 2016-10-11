@@ -8,12 +8,11 @@ text-align: center;
 display: none;
 }
 #keyboard{
-width: 80%;
+width: 90%;
 height: 50%;
-text-align: center;
-margin-top: 5%;
-margin-left:9%;
-margin-right: 9%;
+margin-top: 4%;
+margin-left:4%;
+margin-right: 4%;
 }
 .keyboard-button{
 border:0 none;

@@ -1,5 +1,4 @@
 // VIRTUAL KEYBOARD FUNCTIONS FOR THE TIMER/COUNT DOWN
-
 function getNum(element) {
 num = element.value;
 var campo = document.getElementById('input-time').value;
@@ -14,7 +13,6 @@ function clearX() {
    $(this).val("");
     });
 }
-
 
 function check () {
 var str = document.getElementById('input-time').value;

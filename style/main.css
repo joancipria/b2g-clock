@@ -11,7 +11,7 @@ body{
   -webkit-user-select: none;  /* Chrome all / Safari all */
   -moz-user-select: none;     /* Firefox all */
   -ms-user-select: none;      /* IE 10+ */
-  user-select: none;          /* Likely future */ 
+  user-select: none;          /* Likely future */
 }
 .small-hr{
 	border: 0,05px solid #cfe2e6;
@@ -43,7 +43,7 @@ body{
 .bar{
 	width: 100%;
 	text-align: center;
-}	
+}
 .menu-button{
 	width: 25%;
 	display: inline;
@@ -59,7 +59,3 @@ body{
 	color: #cfe2e6;
 	text-decoration: none;
 }
-
-
-
-

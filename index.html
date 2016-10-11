@@ -14,28 +14,28 @@
 		<link href="style/stop_watch.css" rel="stylesheet">
 		<link href="style/buttons.css" rel="stylesheet">
 	</head>
-	
-	
+
+
 	<body onload="startTime();startDate ();">
-		
+
 		<!-- MAIN MENU BAR -->
 		<div class="bar">
 			<div class="menu-button">
-				<a href="#" onclick="viewAlarms();" ><img id="b1" width="7%" src="img/alarm.png" alt=""></a>
+				<a href="#" onclick="viewAlarms();" ><img id="b1" width="7%" src="img/alarm.svg" alt=""></a>
 			</div>
 
 			<div class="menu-button">
-				<a href="#" onclick="viewWatch();" ><img id="b2" class="selected-button" width="7%" src="img/clock.png" alt=""></a>
+				<a href="#" onclick="viewWatch();" ><img id="b2" class="selected-button" width="7%" src="img/clock.svg" alt=""></a>
 			</div>
-	
+
 			<div class="menu-button">
-				<a href="#" onclick="viewTimer();" ><img id="b3" width="7%" src="img/timer.png" alt=""></a>
+				<a href="#" onclick="viewTimer();" ><img id="b3" width="7%" src="img/timer.svg" alt=""></a>
 			</div>
 
 			<div class="menu-button">
 				<a  href="#" onclick="viewStopWatch();"><img id="b4" width="7%" src="img/stop-watch.png" alt=""></a>
 			</div><hr>
-		
+
 		</div>
 
 
@@ -48,7 +48,7 @@
 
 		<!-- STOP-WATCH LAYER -->
 		<div id="all-stop-watch">
-			
+
 			<div id="stop-watch">
 				<div class="crono_wrapper">
 					<div id="crono"><span id="time"></span></div>
@@ -59,32 +59,32 @@
 			</div>
 
 			<div id="laps">
-			<!-- Laps will be generated here-->	
+			<!-- Laps will be generated here-->
 			</div>
 		</div>
 
 		<!-- TIMER/COUNT DOWN LAYER -->
 		<div id="all-timer">
-			
+
 			<div id="input-layer"> <!-- Input sub-layer -->
-				
+
 					<div class="input-form"><table><tr><td>
 					<input placeholder="00" class="input-time" id="input-time-3" style="width 5%;display: inline;" disabled/><p class="minutes-text">H</p></td><td>
 					<input placeholder="00" class="input-time" id="input-time-2" style="width 5%;display: inline;" disabled/><p class="minutes-text">M</p></td><td>
 					<input placeholder="00" class="input-time" id="input-time" style="width 5%;display: inline;" disabled/><p class="minutes-text">S</p></td></tr></table> <!-- Time input-->
-					</div>	
+					</div>
 
 			<!-- Virtual Numeric Keyboard -->
-				<table id="keyboard">
-					<tr><td onclick="get1();" class="keyboard-button">1</td><td onclick="get2();" class="keyboard-button">2</td><td onclick="get3();" class="keyboard-button">3</td></tr>
-					<tr><td onclick="get4();" class="keyboard-button">4</td><td onclick="get5();" class="keyboard-button">5</td><td onclick="get6();" class="keyboard-button">6</td></tr>
-					<tr><td onclick="get7();" class="keyboard-button">7</td><td onclick="get8();" class="keyboard-button">8</td><td onclick="get9();" class="keyboard-button">9</td></tr>
-					<tr><td></td><td onclick="get0();" class="keyboard-button">0</td><td onclick="clearX();" class="keyboard-button"><p class="reset-button2">&#10005;</p></td></tr>
-				</table><br>
-			
-					<input onclick="StartCountDown();" type="button" value="Start" class="greenButton"/>
+				<div id="keyboard">
+					<input class="keyboard-button" onclick="getNum(this);" value="1" type="button">					<input class="keyboard-button" onclick="getNum(this);" value="2" type="button">					<input class="keyboard-button" onclick="getNum(this);" value="3" type="button"><br>
+					<input class="keyboard-button" onclick="getNum(this);" value="4" type="button">					<input class="keyboard-button" onclick="getNum(this);" value="5" type="button">					<input class="keyboard-button" onclick="getNum(this);" value="6" type="button"><br>
+					<input class="keyboard-button" onclick="getNum(this);" value="7" type="button">					<input class="keyboard-button" onclick="getNum(this);" value="8" type="button">					<input class="keyboard-button" onclick="getNum(this);" value="9" type="button"><br>
+					<input class="keyboard-button" onclick="" value="&larr;" type="button">         <input class="keyboard-button" onclick="getNum(this);" value="0" type="button"> <input class="keyboard-button" onclick="clearX();"     value="&#10005;" type="button">
+				</div>
+
+					<input onclick="StartCountDown();" type="button" value="Start" class="greenButton greenButton-timer-custom"/>
 			</div>
-			
+
 			<div id="count-down"> <!-- Count down sub-layer -->
 				<div class="timer-text-numbers" id="countdown">00:00</div><br>
 				<div class="redButton" id="pause">Pause</div>
@@ -93,7 +93,7 @@
 			</div>
 				<script src="js/timer.js" type="text/javascript" async=""></script>
 		</div>
-		
+
 		<!-- ALARMS LAYER -->
 		<div id="all-alarms"><h2 style="color: white;">NOT IMPLEMENTED YET</h2></div>
 	</body>

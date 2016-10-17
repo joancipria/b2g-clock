@@ -4,24 +4,24 @@ document.getElementById('input-layer').style.display="none";
 document.getElementById('countdown').style.color="#cfe2e6";
 
 var CountDown = (function ($) {
-	
+
 
     // Length ms
     var TimeOut = 100000;
     // Interval ms
     var TimeGap = 1000;
-    
+
     var CurrentTime = ( new Date() ).getTime();
     var EndTime = ( new Date() ).getTime() + TimeOut;
-    
- 
-    var GuiTimer = $('#countdown');    
+
+
+    var GuiTimer = $('#countdown');
     var GuiPause = $('#pause');
     var GuiResume = $('#resume').hide();
-    
+
     var wantReset = false;
     var Running = true;
-    
+
     var UpdateTimer = function() {
         // Run till timeout
         if( CurrentTime + TimeGap < EndTime ) {
@@ -33,14 +33,15 @@ var CountDown = (function ($) {
             if( CurrentTime >= EndTime && wantReset==true) {
     					 GuiPause.hide();
             }
-            
+
 			if( CurrentTime >= EndTime && wantReset==false) {
                 GuiTimer.css('color','red');
-                var audio = new Audio('sounds/ac_awake.opus.ogx');
+                audio = new Audio('sounds/ac_awake.opus.ogx');
+								audio.loop=true;
 					 audio.play();
 					 GuiPause.hide();
-            }            
-            
+            }
+
         }
         // Update Gui
         var Time = new Date();
@@ -49,48 +50,49 @@ var CountDown = (function ($) {
         var Minutes = Time.getMinutes();
         var Seconds = Time.getSeconds();
 
-        
+
 if (document.getElementById('input-time-3').value=="" || document.getElementById('input-time-3').value=="1" && document.getElementById('input-time-2').value=="00" && document.getElementById('input-time').value=="00" || document.getElementById('input-time-3').value=="01" && document.getElementById('input-time-2').value=="00" && document.getElementById('input-time').value=="00" ) {
-        
-        GuiTimer.html( 
-         (Minutes < 10 ? '0' : '') + Minutes 
+
+        GuiTimer.html(
+         (Minutes < 10 ? '0' : '') + Minutes
             + ':'
             + (Seconds < 10 ? '0' : '') + Seconds)}
-            
-            
+
+
            else {
-        
-        GuiTimer.html( 
-            (Hours < 10 ? '0' : '') + Hours 
-            + ':' 
-            + (Minutes < 10 ? '0' : '') + Minutes 
+
+        GuiTimer.html(
+            (Hours < 10 ? '0' : '') + Hours
+            + ':'
+            + (Minutes < 10 ? '0' : '') + Minutes
             + ':'
             + (Seconds < 10 ? '0' : '') + Seconds);
            }
-            
+
     };
-    
+
     var Pause = function() {
         Running = false;
         GuiPause.hide();
         GuiResume.show();
     };
-      
-   
+
+
     var Resume = function() {
         Running = true;
         GuiPause.show();
         GuiResume.hide();
     };
-    
+
 var Reset = function() {
 EndTime=0;
 document.getElementById('count-down').style.display="none";
 document.getElementById('input-layer').style.display="block";
 wantReset=true;
+audio.pause();
 clearX();
     };
-    
+
     var Start = function( Timeout ) {
         TimeOut = Timeout;
         CurrentTime = ( new Date() ).getTime();
@@ -100,7 +102,7 @@ clearX();
         Running = true;
         GuiPause.show();
 
-        
+
     };
 
     return {

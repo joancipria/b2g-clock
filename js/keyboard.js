@@ -6,12 +6,14 @@ var resultado = campo.concat(num);
 document.getElementById('input-time').value=resultado;
 check();
 check2();
+document.getElementById('numberZero').onclick = function() { getNum(this); };
 }
 
 function clearX() {
      $('.input-form input').each(function () {
    $(this).val("");
     });
+    document.getElementById('numberZero').onclick = function() {};
 }
 
 function check () {

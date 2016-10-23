@@ -1,5 +1,9 @@
 // VIRTUAL KEYBOARD FUNCTIONS FOR THE TIMER/COUNT DOWN
 function getNum(element) {
+  if (document.getElementById('input-time-3').value.length>=2) {
+    document.getElementsByClassName('keyboard-button').onclick = function() {};
+  }
+  else{
 num = element.value;
 var campo = document.getElementById('input-time').value;
 var resultado = campo.concat(num);
@@ -8,12 +12,15 @@ check();
 check2();
 document.getElementById('numberZero').onclick = function() { getNum(this); };
 }
+}
 
 function clearX() {
      $('.input-form input').each(function () {
    $(this).val("");
     });
+    document.getElementsByClassName('keyboard-button').onclick = function() { getNum(this); };
     document.getElementById('numberZero').onclick = function() {};
+
 }
 
 function check () {
